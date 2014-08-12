@@ -1,6 +1,10 @@
 <div id='container'>
 <!-- Your code here -->
-
+  <input ng-model="link.url" placeholder="http://www.yourlinkhere.com">
+  <button ng-if= "link.url.length > 0" ng-click="addLink(link.url)">Submit</button>
+  <h1 ng-if="loading">Loading</h1>
+  <br />
+  <a href="#/links"> Your Links </a>
 </div>
 
 
