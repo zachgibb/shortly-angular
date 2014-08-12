@@ -8,7 +8,13 @@
   <body>
     <h1>Shortly</h1>
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
-    {{location}}
+    <nav class= "navigation">
+      <ul>
+        <li><a href="#/signin">Sign in</a></li>
+        <li><a href="#/links">Your Links</a></li>
+        <li><a href="#/shorten">New Link</a></li>
+      </ul>
+    </nav>
     <div ng-view></div>
 
     <script>

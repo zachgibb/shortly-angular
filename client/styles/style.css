@@ -52,8 +52,11 @@ h1 {
   clear: both;
   margin-top: 10px;
 }
-
+.links-listing input {
+  margin-left:10px;
+}
 .link {
+  list-style: none;
   clear: both;
   margin-bottom: 5px;
   padding: 5px;
@@ -110,16 +113,12 @@ input[type=url] {
 }
 
 
-.error {
-  border: red solid 4px;
-  padding: 10px;
-  margin: 0 10px;
+.error, input.ng-invalid {
+  border: red solid 2px;
 }
 
-.clean {
+.clean,input.ng-valid {
   border: #efe solid 2px;
-  padding: 10px;
-  margin: 0 10px;
 }
 
 .creator {
