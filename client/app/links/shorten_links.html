@@ -1,0 +1,10 @@
+
+<li class="link">
+  <img src="assets/redirect_icon.png">
+  <p class="visits">Visits: <span class="count">{{ data.visits }}</span></p>
+  <a href="api/links/{{data.code}}" target="_blank">
+    <p class="title">{{ data.title }}</p>
+  </a>
+  <p> {{ data.base_url +'/'+ data.code }}</p>
+  <p class="original">{{ data.url }}</p>              
+</li>

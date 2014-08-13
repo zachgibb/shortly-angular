@@ -9,9 +9,18 @@ angular.module('shortly.links', [])
   $scope.getLinks = function(){
     Links.getLinks(function(response){
       $scope.data.links = response.data;
-      console.log($scope.data);
     });
   };
   $scope.getLinks();
   //should call get links when the controller is loaded <- links.html
+})
+.directive('shortenLinks', function(){
+  return {
+    replace: true,
+    restrict: 'E',
+    scope: {
+      data: '='
+    },
+    templateUrl: "app/links/shorten_links.html"
+  };
 });

@@ -10,18 +10,18 @@
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
     <nav class= "navigation">
       <ul>
-        <li><a href="#/signin">Sign in</a></li>
-        <li><a href="#/links">Your Links</a></li>
-        <li><a href="#/shorten">New Link</a></li>
+        <li><a ui-sref="signin">Sign in</a></li>
+        <li><a ui-sref="links">Your Links</a></li>
+        <li><a ui-sref="shorten">New Link</a></li>
       </ul>
     </nav>
-    <div ng-view></div>
+    <div ui-view></div>
 
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
     </script>
     <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script src="app/auth/auth.js"></script>
     <script src="app/links/links.js"></script>

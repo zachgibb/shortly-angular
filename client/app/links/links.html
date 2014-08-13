@@ -2,12 +2,7 @@
   <!-- Your html here -->
   <input ng-model="search" type="text" placeholder="Search">
   <ul>
-    
-    <li class="link" ng-repeat="datum in data.links | orderBy: datum.visits | filter: search">
-      <p class="visits">Visits: <span class="count">{{ datum.visits }}</span></p>
-      <p class="title">{{ datum.title }}</p>
-      <p> {{ datum.base_url +'/'+ datum.code }}</p>
-      <p class="original">{{ datum.url }}</p>              
-    </li>
+    <shorten-links data="datum" ng-repeat="datum in data.links | orderBy: datum.visits | filter: search">
+    </shorten-links>
   </ul>
 </div>
